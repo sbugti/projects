@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <?import javafx.scene.control.Button?> -->
+<?import com.group25.BubsFancyButtonBorder?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group25.GUI.controller.FirstEditUserController">
+   <children>
+      <Label layoutX="228.0" layoutY="171.0" text="Create A New Profile" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="24.0" />
+         </font>
+      </Label>
+      <BubsFancyButtonBorder fx:id="createBtn" focusTraversable="false" layoutX="279.0" layoutY="270.0" minHeight="28.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#createBtnClicked" prefHeight="28.0" prefWidth="163.0" style="-fx-background-color: black;" text="Create" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="16.0" />
+         </font>
+      </BubsFancyButtonBorder>
+      <BubsFancyButtonBorder fx:id="btnBack" focusTraversable="false" layoutX="32.0" layoutY="58.0" minHeight="28.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#backBtnClicked" prefHeight="28.0" prefWidth="80.0" style="-fx-background-color: black;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="16.0" />
+         </font>
+      </BubsFancyButtonBorder>
+      <TextField fx:id="usernameText" layoutX="271.0" layoutY="222.0" prefHeight="30.0" prefWidth="312.0" promptText="Enter Username Here">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </TextField>
+      <Label fx:id="labelFeedback1" text="New Profile Created and Switched to!" visible="false" layoutX="450.0" layoutY="16.0" textFill="WHITE"> </Label>
+      <Label layoutX="139.0" layoutY="222.0" text="Username" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

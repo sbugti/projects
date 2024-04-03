@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import com.group25.BubsFancyInstructionBackButton?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group25.GUI.controller.InstructionController">
+   <children>
+      <ImageView fitHeight="494.0" fitWidth="720.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/bg.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="167.0" layoutY="18.0" prefHeight="47.0" prefWidth="388.0" style="-fx-background-color: black;" text="Instructions" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <!-- Back Button -->
+      <BubsFancyInstructionBackButton fx:id="btnBack" layoutX="11.0" layoutY="28.0" onAction="#handleBackButtonClick" style="-fx-background-color: black;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="16.0" />
+         </font></BubsFancyInstructionBackButton>
+      <Label fx:id="labelFeedback" layoutX="634.0" layoutY="26.0" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </Label>
+      <ButtonBar fx:id="btnBar" buttonMinWidth="150.0" layoutX="10.0" layoutY="78.0" prefHeight="50.0" prefWidth="700.0" style="-fx-background-color: black; -fx-background-radius: 0;">
+        <buttons>
+            <Button fx:id="btnOverview" mnemonicParsing="false" onAction="#btnOverviewClicked" style="-fx-background-color: transparent;" text="Overview" textFill="#bfac36" />
+          <Button fx:id="btnPowerup" mnemonicParsing="false" onAction="#btnPowerupClicked" style="-fx-background-color: transparent;" text="Power Ups" textFill="WHITE" />
+            <Button fx:id="btnLevelCreator" mnemonicParsing="false" onAction="#btnLevelCreatorClicked" style="-fx-background-color: transparent;" text="Level Creator" textFill="WHITE" />
+            <Button fx:id="btnControls" mnemonicParsing="false" onAction="#btnControlsClicked" style="-fx-background-color: transparent;" text="Controls" textFill="WHITE" />
+        </buttons>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+         <padding>
+            <Insets left="10.0" right="35.0" />
+         </padding>
+      </ButtonBar>
+  <AnchorPane fx:id="OverviewPane" layoutX="10.0" layoutY="120.0" minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="700.0" style="-fx-background-color: black; -fx-background-radius: 0;">
+         <children>
+            <Text fill="WHITE" layoutX="24.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello and welcome to Monster Mayhem's Tutorial. Here, you'll learn all about our game, including the base mechanics, our own unique features, and how to handle this beast of an application." wrappingWidth="388.0" />
+            <ImageView layoutX="453.0" layoutY="13.0" fitHeight="160.0" fitWidth="220.0">
+               <image>
+                     <Image url="@../assets/mainmenu.png"/>
+               </image>
+            </ImageView>
+            
+            <ImageView layoutX="453.0" layoutY="187.0" fitHeight="160.0" fitWidth="220.0">
+               <image>
+                     <Image url="@../assets/gamescreen.png"/>
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="24.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First, when you start up the game you'll be welcomed by a Main Menu screen on the right, as you have already seen. Most buttons should be self-explanatory, but if you just want to head into the game, you should probably start with Play." wrappingWidth="388.0" />
+            <Text fill="WHITE" layoutX="24.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The second image on the right is the basic gameplay screen. On your left you'll see your character, on the right your enemy, and in the middle some multiple choice options to the question above them. As one might guess, selecting the correct option will lower the monster's health bar, whereas getting the question wrong will lower the player's. There's also a timer so make sure you defeat the monster in a quick enough manner. This is the main gameplay loop of Monster Mayhem." wrappingWidth="388.0" />
+            <Text fill="WHITE" layoutX="24.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To view the next parts of our instructions, click the various tabs up top. Or if you'd like to return to the main menu, click the back button at the top left of your screen." wrappingWidth="388.0" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+      <AnchorPane fx:id="PowerupPane" layoutX="10.0" layoutY="120.0" minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="700.0" style="-fx-background-color: black;" visible="false">
+         <children>
+            <Text fill="WHITE" layoutX="24.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Onto the next section, powerups. There are 3 power ups. Firstly, we have Fortify, which reduces the damage taken by player from running out of time or choosing the wrong answer. Secondly, we have Overtime, which increasing the amount of time the player gets to answer each question. Finally, we have Multiply, which increases the score given by each correct answer." wrappingWidth="388.0" />
+            <ImageView layoutX="513.0" layoutY="25.0" fitHeight="90.0" fitWidth="90.0">
+               <image>
+                     <Image url="@../assets/visuals/powerups/powerup1.png"/>
+               </image>
+            </ImageView>
+            
+            <ImageView layoutX="513.0" layoutY="125.0" fitHeight="90.0" fitWidth="90.0">
+               <image>
+                     <Image url="@../assets/visuals/powerups/powerup2.png"/>
+               </image>
+            </ImageView>
+            <ImageView layoutX="513.0" layoutY="225.0" fitHeight="90.0" fitWidth="90.0">
+               <image>
+                     <Image url="@../assets/visuals/powerups/powerup3.png"/>
+               </image>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+      <AnchorPane fx:id="LevelCreatorPane" layoutX="10.0" layoutY="120.0" minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="700.0" style="-fx-background-color: black;" visible="false">
+         <children>
+            <Text fill="WHITE" layoutX="22.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This next section is about the level creation feature of our game. Choosing the level creator option from the main menu will present you with the screen on the right. You can select a pre existing level, or create a new one." wrappingWidth="388.0" />
+            <ImageView layoutX="453.0" layoutY="90.0" fitHeight="160.0" fitWidth="220.0">
+               <image>
+                     <Image url="@../assets/levelmaker.png"/>
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="22.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="After selecting a level, you can edit the parameters of the questions as shown on the second image. Make changes such as editing the amount of questions, the parameters of a question, etc. and save the level to the possible sets of levels." wrappingWidth="388.0" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+      <AnchorPane fx:id="ControlsPane" layoutX="10.0" layoutY="120.0" minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="700.0" style="-fx-background-color: black;" visible="false">
+         <children>
+            <Text fill="WHITE" layoutX="22.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The controls of our game are not complex. You have the option of using either the keyboard or the mouse. In the main menu you can use the keyboard to navigate with the arrow keys, or the mouse to point and click. " wrappingWidth="388.0" />
+            <ImageView layoutX="403.0" layoutY="13.0" fitHeight="240.0" fitWidth="300.0">
+               <image>
+                     <Image url="@../assets/controls.png"/>
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="22.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="That's it." wrappingWidth="388.0" />
+            <Text fill="WHITE" layoutX="22.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In the actual game, however, you can select questions with the 1, 2, 3, and 4 buttons on your keyboard, or point and click once again with the mouse." wrappingWidth="388.0" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+   </children>
+</Pane>

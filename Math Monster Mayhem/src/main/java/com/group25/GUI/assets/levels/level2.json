@@ -1,0 +1,215 @@
+[
+    {
+        "question": "Solve for x in the equation 3x + 9 = 0.",
+        "answers": [
+            {
+                "text": "-3",
+                "correct": true
+            },
+            {
+                "text": "3",
+                "correct": false
+            },
+            {
+                "text": "-9",
+                "correct": false
+            },
+            {
+                "text": "9",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "What is the area of a rectangle with length 7cm and width 4cm?",
+        "answers": [
+            {
+                "text": "11 cm²",
+                "correct": false
+            },
+            {
+                "text": "28 cm²",
+                "correct": true
+            },
+            {
+                "text": "14 cm²",
+                "correct": false
+            },
+            {
+                "text": "21 cm²",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "What is the probability of flipping a coin and getting heads?",
+        "answers": [
+            {
+                "text": "1/4",
+                "correct": false
+            },
+            {
+                "text": "1/2",
+                "correct": true
+            },
+            {
+                "text": "3/4",
+                "correct": false
+            },
+            {
+                "text": "2/3",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Find the value of 7².",
+        "answers": [
+            {
+                "text": "49",
+                "correct": true
+            },
+            {
+                "text": "14",
+                "correct": false
+            },
+            {
+                "text": "42",
+                "correct": false
+            },
+            {
+                "text": "56",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Simplify the expression 5x - 2x.",
+        "answers": [
+            {
+                "text": "7x",
+                "correct": false
+            },
+            {
+                "text": "3x",
+                "correct": true
+            },
+            {
+                "text": "2x",
+                "correct": false
+            },
+            {
+                "text": "x",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "What is the perimeter of a square with a side length of 6cm?",
+        "answers": [
+            {
+                "text": "24 cm",
+                "correct": true
+            },
+            {
+                "text": "18 cm",
+                "correct": false
+            },
+            {
+                "text": "36 cm",
+                "correct": false
+            },
+            {
+                "text": "12 cm",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "If the total cost of 5 pencils is $2.50, what is the cost of one pencil?",
+        "answers": [
+            {
+                "text": "$2.00",
+                "correct": false
+            },
+            {
+                "text": "$1.00",
+                "correct": false
+            },
+            {
+                "text": "$0.25",
+                "correct": false
+            },
+            {
+
+                "text": "$0.50",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "What is the next number in the sequence 2, 4, 8, 16, ...?",
+        "answers": [
+            {
+                "text": "32",
+                "correct": true
+            },
+            {
+                "text": "24",
+                "correct": false
+            },
+            {
+                "text": "18",
+                "correct": false
+            },
+            {
+                "text": "20",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Convert 1500 grams to kilograms.",
+        "answers": [
+            {
+                "text": "0.15 kg",
+                "correct": false
+            },
+            {
+                "text": "15 kg",
+                "correct": false
+            },
+            {
+                "text": "1.5 kg",
+                "correct": true
+            },
+            {
+                "text": "150 kg",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Solve the equation 4(y - 3) = 8.",
+        "answers": [
+                {
+                    "text": "y = 3",
+                    "correct": true
+                },
+                {
+                    "text": "y = 5",
+                    "correct": false
+                },
+                {
+                    "text": "y = 12",
+                    "correct": false
+                },
+                {
+                    "text": "y = 8",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+
+    

@@ -1,0 +1,275 @@
+[
+    {
+        "question": "What is the equation of a line in slope-intercept form?",
+        "answers": [
+            {
+                "text": "y = mx + b",
+                "correct": true
+            },
+            {
+                "text": "ax + by = c",
+                "correct": false
+            },
+            {
+                "text": "y₁ - y₂ = m(x₂ - x₁)",
+                "correct": false
+            },
+            {
+                "text": "b² - 4ac = 0",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "What is the slope of the line perpendicular to the line y = -3x + 4?",
+        "answers": [
+            {
+                "text": "3",
+                "correct": false
+            },
+            {
+                "text": "-3",
+                "correct": false
+            },
+            {
+                "text": "1/3",
+                "correct": true
+            },
+            {
+                "text": "-1/3",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "What is the inverse function of f(x) = 2x + 3?",
+        "answers": [
+            {
+                "text": "3 - 2x",
+                "correct": false
+            },
+            {
+                "text": "2x - 3",
+                "correct": false
+            },
+            {
+                "text": "x/2 + 3/2",
+                "correct": false
+            },
+            {
+                "text": "(x - 3) / 2",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "What type of number is pi?",
+        "answers": [
+            {
+                "text": "rational",
+                "correct": false
+            },
+            {
+                "text": "natural",
+                "correct": true
+            },
+            {
+                "text": "irrational",
+                "correct": false
+            },
+            {
+                "text": "complex",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "If a right triangle has a hyptotenuse of length 13 and a side of length 12, what is the length of the unkown side?",
+        "answers": [
+            {
+                "text": "11",
+                "correct": false
+            },
+            {
+                "text": "1",
+                "correct": false
+            },
+            {
+                "text": "5",
+                "correct": true
+            },
+            {
+                "text": "9",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "What is 3⁵?",
+        "answers": [
+            {
+                "text": "243",
+                "correct": true
+            },
+            {
+                "text": "81",
+                "correct": false
+            },
+            {
+                "text": "729",
+                "correct": false
+            },
+            {
+                "text": "312",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "How many roots can a quadratic function have?",
+        "answers": [
+            {
+                "text": "only 2",
+                "correct": false
+            },
+            {
+                "text": "0 or 1",
+                "correct": true
+            },
+            {
+                "text": "1 or 2",
+                "correct": false
+            },
+            {
+                "text": "0, 1, or 2",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "What percentage is 7/28 equal to?",
+        "answers": [
+            {
+                "text": "28%",
+                "correct": false
+            },
+            {
+                "text": "25%",
+                "correct": true
+            },
+            {
+                "text": "49%",
+                "correct": false
+            },
+            {
+                "text": "35%",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Solve the following inequality: 3(2x - 10) > 2(x + 5)",
+        "answers": [
+            {
+                "text": "x < 13",
+                "correct": false
+            },
+            {
+                "text": "x > 5",
+                "correct": false
+            },
+            {
+                "text": "x > 10",
+                "correct": true
+            },
+            {
+                "text": "x < 10",
+                "correct": false
+            }
+        ]
+    },
+    {
+            "question": "What is the sum of the interior angles of a pentagon?",
+            "answers": [
+                {
+                    "text": "540°",
+                    "correct": true
+                },
+                {
+                    "text": "360°",
+                    "correct": false
+                },
+                {
+                    "text": "720°",
+                    "correct": false
+                },
+                {
+                    "text": "180°",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "If the quadratic equation ax^2 + bx + c = 0 has roots 1 and -2, what is the value of c?",
+            "answers": [
+                {
+                    "text": "-2",
+                    "correct": true
+                },
+                {
+                    "text": "2",
+                    "correct": false
+                },
+                {
+                    "text": "1",
+                    "correct": false
+                },
+                {
+                    "text": "-1",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the slope of the line perpendicular to the line with equation y = -3x + 4?",
+            "answers": [
+                {
+                    "text": "1/3",
+                    "correct": true
+                },
+                {
+                    "text": "-3",
+                    "correct": false
+                },
+                {
+                    "text": "3",
+                    "correct": false
+                },
+                {
+                    "text": "-1/3",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is the next term in the series 3, 12, 48, ...?",
+            "answers": [
+                {
+                    "text": "240",
+                    "correct": false
+                },
+                {
+                    "text": "144",
+                    "correct": false
+                },
+                {
+                    "text": "96",
+                    "correct": false
+                },
+                {
+                    "text": "192",
+                    "correct": true
+                }
+            ]
+        }
+]

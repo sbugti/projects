@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!-- <?import com.group25.BubsFancyButton?> -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group25.GUI.controller.ChallengeGameSceneController">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/wipBG.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="160.0" fitWidth="720.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/clouds.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="enemyImg" fitHeight="150.0" fitWidth="200.0" layoutX="550.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/monsters/enemy3.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnChoiceA" alignment="BASELINE_LEFT" layoutX="209.0" layoutY="205.0" mnemonicParsing="false" onAction="#btnChoiceAClicked" onKeyPressed="#handleKeyPress" prefHeight="46.0" prefWidth="150.0" style="-fx-background-color: black;" text="A" textFill="WHITE" />
+      <Button fx:id="btnChoiceB" alignment="BASELINE_LEFT" layoutX="366.0" layoutY="205.0" mnemonicParsing="false" onAction="#btnChoiceBClicked" onKeyPressed="#handleKeyPress" prefHeight="46.0" prefWidth="150.0" style="-fx-background-color: black;" text="B" textFill="WHITE" />
+      <Button fx:id="btnChoiceC" alignment="BASELINE_LEFT" layoutX="209.0" layoutY="257.0" mnemonicParsing="false" onAction="#btnChoiceCClicked" onKeyPressed="#handleKeyPress" prefHeight="46.0" prefWidth="150.0" style="-fx-background-color: black;" text="C" textFill="WHITE" />
+      <Button fx:id="btnChoiceD" alignment="BASELINE_LEFT" layoutX="366.0" layoutY="257.0" mnemonicParsing="false" onAction="#btnChoiceDClicked" onKeyPressed="#handleKeyPress" prefHeight="46.0" prefWidth="150.0" style="-fx-background-color: black;" text="D" textFill="WHITE" />
+      <Button fx:id="btnPause" layoutX="14.0" layoutY="14.0" minHeight="45.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnPauseClicked" prefHeight="45.0" prefWidth="43.0" style="-fx-background-color: black;" text="| |" textFill="WHITE" />
+      <StackPane layoutX="8.0" layoutY="123.0" prefHeight="69.0" prefWidth="703.0" style="-fx-background-color: rgb(144, 229, 144); -fx-background-radius: 15;">
+         <children>
+      
+            
+            <Label fx:id="questionText" alignment="CENTER" ellipsisString="" prefHeight="66.0" prefWidth="694.0" text="*Question*" textAlignment="CENTER" textFill="#484848" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <ProgressBar fx:id="enemyHealth" layoutX="561.0" layoutY="452.0" prefHeight="21.0" prefWidth="130.0" progress="1.0" />
+      <!-- <Button focusTraversable="false" layoutX="14.0" layoutY="14.0" minHeight="45.0" minWidth="-Infinity" mnemonicParsing="false" prefHeight="45.0" prefWidth="43.0" style="-fx-background-color: black;" text="||" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Button> -->
+      <Label fx:id="timeText" alignment="CENTER" layoutX="319.0" layoutY="35.0" prefHeight="54.0" prefWidth="82.0" style="-fx-border-radius: 10; -fx-background-color: rgba(120,120,120,0.75); -fx-background-radius: 10;" text="00" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoreText" alignment="CENTER" layoutX="420.0" layoutY="35.0" prefHeight="54.0" prefWidth="286.0" style="-fx-background-color: rgba(120,120,120,0.75); -fx-background-radius: 10;" text="Score: 10000000" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="playerHealth" layoutX="31.0" layoutY="452.0" prefHeight="21.0" prefWidth="130.0" progress="1.0" />
+      <ImageView fx:id="shirtImg" fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/character/shirt1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="skinImg" fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/character/skin1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hatImg" fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/character/hat1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="shadowImg" fitHeight="150.0" fitWidth="200.0" layoutX="550.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/monsters/enemyShadow.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="playerHealthText" alignment="CENTER" layoutX="31.0" layoutY="425.0" prefHeight="30.0" prefWidth="130.0" text="00" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="enemyHealthText" alignment="CENTER" layoutX="561.0" layoutY="425.0" prefHeight="30.0" prefWidth="130.0" text="00" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoreMultiplyText" alignment="CENTER" layoutX="645.0" layoutY="93.0" prefHeight="21.0" prefWidth="55.0" style="-fx-background-color: rgba(120,120,120,0.75); -fx-background-radius: 10;" text="1.0x" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="68.0" layoutY="36.0" prefHeight="54.0" prefWidth="235.0" style="-fx-background-color: rgba(120,120,120,0.75); -fx-background-radius: 10;">
+         <children>
+            <Label fx:id="dmgMText" layoutX="56.0" layoutY="14.0" text="x0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeMText" layoutX="129.0" layoutY="14.0" text="x0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreMText" layoutX="201.0" layoutY="14.0" text="x0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="87.0" fitWidth="43.0" layoutX="80.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/powerups/powerup1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="43.0" layoutX="152.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/powerups/powerup2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="43.0" layoutX="224.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/powerups/powerup3.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="losePane" disable="true" layoutY="-1.0" prefHeight="482.0" prefWidth="726.0" style="-fx-background-color: black;" visible="false">
+         <children>
+            <Text fx:id="loseText" fill="WHITE" layoutX="195.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You Lose!" textAlignment="CENTER" wrappingWidth="336.7972869873047">
+               <font>
+                  <Font name="Consolas Bold" size="64.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnLoseBack" disable="true" layoutX="151.0" layoutY="352.0" mnemonicParsing="false" onAction="#btnMenuClicked" style="-fx-background-color: white;" text="Return To Main Menu" visible="false">
+               <font>
+                  <Font name="Consolas Bold" size="36.0" />
+               </font></Button>
+            <Label fx:id="loseScoreLabel" layoutX="280.0" layoutY="204.0" text="Score:" textFill="WHITE">
+               <font>
+                  <Font name="Consolas" size="32.0" />
+               </font></Label>
+            <Label fx:id="loseScoreText" layoutX="410.0" layoutY="204.0" text="00" textFill="WHITE">
+               <font>
+                  <Font name="Consolas" size="32.0" />
+               </font></Label>
+            <Button fx:id="btnTryAgain" disable="true" layoutX="250.0" layoutY="259.0" mnemonicParsing="false" onAction="#btnTryAgainClicked" style="-fx-background-color: white;" text="Try Again" visible="false">
+               <font>
+                  <Font name="Consolas Bold" size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="slashGIF" fitHeight="150.0" fitWidth="200.0" layoutX="540.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="pausePane" disable="true" prefHeight="482.0" prefWidth="720.0" style="-fx-background-color: black;" visible="false">
+         <children>
+            <Text disable="true" fill="WHITE" layoutX="158.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAUSE MENU" textAlignment="CENTER" wrappingWidth="405.7972869873047">
+               <font>
+                  <Font name="Consolas Bold" size="64.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnContinue" disable="true" layoutX="257.0" layoutY="193.0" mnemonicParsing="false" onAction="#btnContinueClicked" style="-fx-background-color: white;" text="Continue" visible="false">
+               <font>
+                  <Font name="Consolas Bold" size="36.0" />
+               </font></Button>
+            <Button fx:id="btnPauseBack" disable="true" layoutX="148.0" layoutY="291.0" mnemonicParsing="false" onAction="#btnMenuClicked" style="-fx-background-color: white;" text="Return to Main Menu" visible="false">
+               <font>
+                  <Font name="Consolas Bold" size="36.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="startPane" layoutX="-2.0" layoutY="-1.0" prefHeight="482.0" prefWidth="732.0" style="-fx-background-color: black;" visible="false">
+         <children>
+            <Text fill="WHITE" layoutX="1.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you ready to start?" textAlignment="CENTER" wrappingWidth="735.0">
+               <font>
+                  <Font name="Consolas Bold" size="64.0" />
+               </font></Text>
+            <Button fx:id="btnStart" layoutX="136.0" layoutY="230.0" mnemonicParsing="false" onAction="#btnStartClicked" onKeyPressed="#handleKeyPress" prefHeight="139.0" prefWidth="465.0" style="-fx-background-color: white;" text="Start">
+               <font>
+                  <Font name="Consolas Bold" size="48.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="modifyPane" disable="true" layoutX="178.0" layoutY="106.0" opacity="0.54" prefHeight="222.0" prefWidth="363.0" style="-fx-background-radius: 10; -fx-background-color: #0662cc;" visible="false" />
+      <Button fx:id="timeModifyBtn" disable="true" layoutX="218.0" layoutY="179.0" mnemonicParsing="false" onAction="#timeModifyBtnClicked" prefHeight="34.0" prefWidth="286.0" style="-fx-background-color: white;" text="Increase Time Given By 3" visible="false">
+         <font>
+            <Font name="Consolas" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="scoreMultiplyBtn" disable="true" layoutX="217.0" layoutY="225.0" mnemonicParsing="false" onAction="#scoreMultiplyBtnClicked" prefHeight="34.0" prefWidth="286.0" style="-fx-background-color: white;" text="Increase Score Multiplier by 0.2" visible="false">
+         <font>
+            <Font name="Consolas" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="reduceDmgBtn" disable="true" layoutX="217.0" layoutY="270.0" mnemonicParsing="false" onAction="#reduceDmgBtnClicked" prefHeight="34.0" prefWidth="286.0" style="-fx-background-color: white;" text="Reduce Damage Taken by 2" visible="false">
+         <font>
+            <Font name="Consolas" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="modifyLabelText" disable="true" layoutX="206.0" layoutY="112.0" text="Select A Power Up" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="slashAttackPane" layoutX="557.0" layoutY="283.0" prefHeight="150.0" prefWidth="150.0" />
+      <AnchorPane fx:id="slashDefendPane" layoutX="21.0" layoutY="273.0" prefHeight="150.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

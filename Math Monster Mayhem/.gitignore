@@ -1,0 +1,17 @@
+
+# Ignore Visual Studio Code configuration files
+.vscode/launch.json
+.vscode/settings.json
+
+# Ignore compiled Java class files
+*.class
+
+# Ignore Maven target directories
+/target/surefire-reports
+/target/classes
+
+# Ignore any JSON files
+*.json
+
+# Unignore the JSON level files
+!src/main/java/com/group25/GUI/assets/levels/*.json

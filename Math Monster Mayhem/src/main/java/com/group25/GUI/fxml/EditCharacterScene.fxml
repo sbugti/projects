@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <?import javafx.scene.control.Button?> -->
+<?import com.group25.BubsFancyButtonBorder?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group25.GUI.controller.EditCharacterController">
+   <children>
+      <Label layoutX="132.0" layoutY="31.0" text="Character Customization" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="profileText" layoutX="26.0" layoutY="105.0" text="Alex's Profile" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="185.0" text="Hat" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="283.0" text="Face" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="382.0" text="Shirt" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </Label>
+      <Pane fx:id="hat1Border" layoutX="163.0" layoutY="156.0" prefHeight="80.0" prefWidth="96.0" style="-fx-background-color: gray;" />
+      <Pane fx:id="hat4Border" layoutX="577.0" layoutY="158.0" prefHeight="80.0" prefWidth="96.0" style="-fx-background-color: gray;" />
+      <Pane fx:id="hat3Border" layoutX="440.0" layoutY="156.0" prefHeight="80.0" prefWidth="96.0" style="-fx-background-color: gray;" />
+      <Pane fx:id="hat2Border" layoutX="303.0" layoutY="156.0" prefHeight="80.0" prefWidth="96.0" style="-fx-background-color: gray;" />
+      <ImageView fx:id="hat2Btn" fitHeight="100.0" fitWidth="80.0" layoutX="311.0" layoutY="170.0" onMouseClicked="#hat2BtnClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/customization/hat2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hat1Btn" fitHeight="80.0" fitWidth="144.0" layoutX="171.0" layoutY="162.0" onMouseClicked="#hat1BtnClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/customization/hat1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hat3Btn" fitHeight="100.0" fitWidth="80.0" layoutX="448.0" layoutY="163.0" onMouseClicked="#hat3BtnClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/customization/hat3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hat4Btn" fitHeight="100.0" fitWidth="80.0" layoutX="585.0" layoutY="163.0" onMouseClicked="#hat4BtnClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/customization/hat4.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="skin1Border" layoutX="163.0" layoutY="254.0" prefHeight="80.0" prefWidth="96.0" style="-fx-background-color: gray;" />
+      <Pane fx:id="skin3Border" layoutX="440.0" layoutY="254.0" prefHeight="80.0" prefWidth="96.0" style="-fx-background-color: gray;" />
+      <Pane fx:id="skin2Border" layoutX="303.0" layoutY="254.0" prefHeight="80.0" prefWidth="96.0" style="-fx-background-color: gray;" />
+      <ImageView fx:id="skin2Btn" fitHeight="100.0" fitWidth="80.0" layoutX="311.0" layoutY="256.0" onMouseClicked="#skin2BtnClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/customization/skin2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="skin1Btn" fitHeight="80.0" fitWidth="144.0" layoutX="171.0" layoutY="254.0" onMouseClicked="#skin1BtnClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/customization/skin1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="skin3Btn" fitHeight="100.0" fitWidth="80.0" layoutX="448.0" layoutY="254.0" onMouseClicked="#skin3BtnClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/customization/skin3.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="shirt1Border" layoutX="163.0" layoutY="352.0" prefHeight="80.0" prefWidth="96.0" style="-fx-background-color: gray;" />
+      <Pane fx:id="shirt4Border" layoutX="577.0" layoutY="352.0" prefHeight="80.0" prefWidth="96.0" style="-fx-background-color: gray;" />
+      <Pane fx:id="shirt3Border" layoutX="440.0" layoutY="352.0" prefHeight="80.0" prefWidth="96.0" style="-fx-background-color: gray;" />
+      <Pane fx:id="shirt2Border" layoutX="303.0" layoutY="352.0" prefHeight="80.0" prefWidth="96.0" style="-fx-background-color: gray;" />
+      <ImageView fx:id="shirt2Btn" fitHeight="100.0" fitWidth="80.0" layoutX="311.0" layoutY="354.0" onMouseClicked="#shirt2BtnClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/customization/shirt2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="shirt1Btn" fitHeight="80.0" fitWidth="144.0" layoutX="171.0" layoutY="352.0" onMouseClicked="#shirt1BtnClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/customization/shirt1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="shirt3Btn" fitHeight="100.0" fitWidth="80.0" layoutX="448.0" layoutY="352.0" onMouseClicked="#shirt3BtnClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/customization/shirt3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="shirt4Btn" fitHeight="100.0" fitWidth="80.0" layoutX="585.0" layoutY="352.0" onMouseClicked="#shirt4BtnClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/customization/shirt4.png" />
+         </image>
+      </ImageView>
+      <BubsFancyButtonBorder fx:id="saveBtn" focusTraversable="false" layoutX="282.0" layoutY="438.0" minHeight="28.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#saveBtnClicked" prefHeight="28.0" prefWidth="156.0" style="-fx-background-color: black;" text="Save Changes" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="16.0" />
+         </font>
+      </BubsFancyButtonBorder>
+      <BubsFancyButtonBorder fx:id="backBtn" focusTraversable="false" layoutX="16.0" layoutY="39.0" minHeight="28.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#backBtnClicked" prefHeight="28.0" prefWidth="80.0" style="-fx-background-color: black;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="16.0" />
+         </font>
+      </BubsFancyButtonBorder>
+      <BubsFancyButtonBorder fx:id="switchProfileBtn" focusTraversable="false" layoutX="536.0" layoutY="105.0" minHeight="28.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchProfileBtnClicked" prefHeight="28.0" prefWidth="163.0" style="-fx-background-color: black;" text="Switch Profile" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="16.0" />
+         </font>
+      </BubsFancyButtonBorder>
+      <Pane fx:id="skin4Border" layoutX="577.0" layoutY="256.0" prefHeight="80.0" prefWidth="96.0" style="-fx-background-color: gray;" />
+      <ImageView fx:id="skin4Btn" fitHeight="100.0" fitWidth="80.0" layoutX="585.0" layoutY="256.0" onMouseClicked="#skin4BtnClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/visuals/customization/skin4.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelFeedback" text="Outfit Saved!" visible="false" layoutX="600.0" layoutY="16.0" textFill="WHITE"> </Label>
+   </children>
+</AnchorPane>

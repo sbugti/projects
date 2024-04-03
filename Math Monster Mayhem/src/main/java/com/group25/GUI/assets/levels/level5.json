@@ -1,0 +1,212 @@
+[
+    {
+        "question": "Find the roots of the quadratic equation x² - 5x + 6 = 0.",
+        "answers": [
+            {
+                "text": "2 and 3",
+                "correct": true
+            },
+            {
+                "text": "1 and 6",
+                "correct": false
+            },
+            {
+                "text": "-2 and -3",
+                "correct": false
+            },
+            {
+                "text": "5 and -1",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "What is the domain of the function f(x) = 1 / (x - 2)?",
+        "answers": [
+            {
+                "text": "∀x∈R, x ≠ 0",
+                "correct": false
+            },
+            {
+                "text": "∀x∈R",
+                "correct": false
+            },
+            {
+                "text": "∀x∈R, x ≠ 2",
+                "correct": true                
+            },
+            {
+                "text": "∀x∈R, x > 2",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "What is the area of a circle with a radius of 4cm?",
+        "answers": [
+            {
+                "text": "16π cm²",
+                "correct": false
+            },
+            {
+                "text": "8π cm²",
+                "correct": false
+            },
+            {
+                "text": "4π cm²",
+                "correct": false
+            },
+            {
+                "text": "16π cm²",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "What is the cosine of 60 degrees?",
+        "answers": [
+            {
+                "text": "0",
+                "correct": false
+            },
+            {
+                "text": "√3/2",
+                "correct": false
+            },
+            {
+                "text": "√2/2",
+                "correct": false
+            },
+            {
+                "text": "1/2",
+                "correct": true                
+            }
+        ]
+    },
+    {
+        "question": "If a single die is rolled one time, what is the probability of rolling a 4?",
+        "answers": [
+            {
+                "text": "1/2",
+                "correct": false
+            },
+            {
+                "text": "1/6",
+                "correct": true
+            },
+            {
+                "text": "1/4",
+                "correct": false
+            },
+            {
+                "text": "1/3",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Solve the system of equations: 2x + 3y = 5 and x - y = 3.",
+        "answers": [
+            {
+                "text": "x = 2, y = -1",
+                "correct": true
+            },
+            {
+                "text": "x = 1, y = 2",
+                "correct": false
+            },
+            {
+                "text": "x = 3, y = 0",
+                "correct": false
+            },
+            {
+                "text": "x = -1, y = 2",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Simplify the expression (x³ * y²)².",
+        "answers": [
+            {
+                "text": "x³ * y⁴",
+                "correct": false
+            },
+            {
+                "text": "x⁵ * y⁴",
+                "correct": false
+            },
+            {
+                "text": "x⁶ * y³",
+                "correct": false
+            },
+            {
+                "text": "x⁶ * y⁴",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Factorize the expression x² - 9.",
+        "answers": [
+            {
+                "text": "(x - 3)²",
+                "correct": false
+            },
+            {
+                "text": "(x + 9)(x - 9)",
+                "correct": false
+            },
+            {
+                "text": "(x + 3)(x - 3)",
+                "correct": true                
+            },
+            {
+                "text": "(x + 3)²",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Simplify the complex fraction (3/4) / (2/3).",
+        "answers": [
+            {
+                "text": "9/8",
+                "correct": true
+            },
+            {
+                "text": "6/7",
+                "correct": false
+            },
+            {
+                "text": "8/9",
+                "correct": false
+            },
+            {
+                "text": "3/2",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "What is the 5th term of the arithmetic series 3, 7, 11, ...?",
+        "answers": [
+            {
+                "text": "15",
+                "correct": false
+            },
+            {
+                "text": "19",
+                "correct": true
+            },
+            {
+                "text": "23",
+                "correct": false
+            },
+            {
+                "text": "27",
+                "correct": false
+            }
+        ]
+    }
+]

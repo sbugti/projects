@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <?import javafx.scene.control.Button?> -->
+<?import com.group25.BubsFancyButtonBorder?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group25.GUI.controller.EditUserController">
+   <children>
+      <ComboBox fx:id="userList" layoutX="226.0" layoutY="174.0" prefHeight="43.0" prefWidth="269.0" promptText="Select User" />
+      <Label layoutX="179.0" layoutY="50.0" text="Choose Your Profile" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="128.0" text="Pick From Saved Profiles" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="24.0" />
+         </font>
+      </Label>
+      <BubsFancyButtonBorder fx:id="chooseProfileBtn" focusTraversable="false" layoutX="280.0" layoutY="233.0" minHeight="28.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#chooseProfileBtnClicked" prefHeight="28.0" prefWidth="163.0" style="-fx-background-color: black;" text="Choose Profile" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="16.0" />
+         </font>
+      </BubsFancyButtonBorder>
+      <Label layoutX="228.0" layoutY="321.0" text="Create A New Profile" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="24.0" />
+         </font>
+      </Label>
+      <BubsFancyButtonBorder fx:id="createBtn" focusTraversable="false" layoutX="279.0" layoutY="420.0" minHeight="28.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#createBtnClicked" prefHeight="28.0" prefWidth="163.0" style="-fx-background-color: black;" text="Create" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="16.0" />
+         </font>
+      </BubsFancyButtonBorder>
+      <BubsFancyButtonBorder fx:id="btnBack" focusTraversable="false" layoutX="32.0" layoutY="58.0" minHeight="28.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#backBtnClicked" prefHeight="28.0" prefWidth="80.0" style="-fx-background-color: black;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="16.0" />
+         </font>
+      </BubsFancyButtonBorder>
+      <TextField fx:id="usernameText" layoutX="271.0" layoutY="372.0" prefHeight="30.0" prefWidth="312.0" promptText="Enter Username Here">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </TextField>
+      <Label fx:id="labelFeedback1" text="New Profile Created and Switched to!" visible="false" layoutX="450.0" layoutY="16.0" textFill="WHITE"> </Label>
+      <Label layoutX="139.0" layoutY="376.0" text="Username" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelFeedback" layoutX="634.0" layoutY="26.0" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
